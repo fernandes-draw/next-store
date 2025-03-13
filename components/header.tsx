@@ -2,6 +2,7 @@ import { Bookmark, Pencil, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import ProductForm from "./product-form";
 
 export default function Header() {
   return (
@@ -48,10 +49,7 @@ export default function Header() {
 
       {/* Buttons */}
       <div className="flex items-center gap-4">
-        <Button variant={"ghost"}>
-          <Pencil />
-          Add Product
-        </Button>
+        <ProductForm />
         <Button variant={"ghost"}>
           <Bookmark />
           Bookmarks
