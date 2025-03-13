@@ -29,7 +29,7 @@ export default function ProductDetail() {
       <div className="flex py-4 items-center justify-between px-8">
         <div className="flex gap-6 items-center justify-between">
           <p>
-            <span className="text-blue-700">Brand : HP</span>
+            <span className="text-blue-700">Price : $ 3000</span>
           </p>
           <p>
             <span className="text-blue-700">Stock</span> : 32 items

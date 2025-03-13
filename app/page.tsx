@@ -1,10 +1,20 @@
+import { getProducts } from "@/actions/products";
 import StorePage from "@/components/store-page";
-import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const products = await getProducts() || [];
+
+  console.log(products);
+
   return (
     <div className="">
-      <StorePage />
+      {products && products.length > 0 ? (
+        <StorePage products={products} />
+      ) : (
+        <div className="">
+          <h2>No Products...</h2>
+        </div>
+      )}
     </div>
   );
 }
