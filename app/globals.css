@@ -1,8 +1,9 @@
 @import "tailwindcss";
-
 @plugin "tailwindcss-animate";
+@import "uploadthing/tw/v4";
 
 @custom-variant dark (&:is(.dark *));
+@source "../node_modules/@uploadthing/react/dist"; /** <-- depends on your project structure */
 
 @theme inline {
   --color-background: var(--background);
